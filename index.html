@@ -1,0 +1,205 @@
+<head>
+  <meta name ="twitter:card" content="summary_large_image"></meta>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
+  <title>HTML 5 Documentation</title> 
+</head>
+
+<body>
+  <nav id = "navbar">
+    <header class = "title">HTML 5 Documentation</header>
+    <a class = "nav-link" id = What_is_HTML_Nav href="#What_is_HTML?">What is HTML?</a>
+    <a class = "nav-link" id = What_you_should_already_know_Nav href = "#What_you_should_already_know">What you should already know</a>
+    <a class = "nav-link" id = Basic_Use_Nav href = "#Basic_Use">Basic Use</a>
+    <a class = "nav-link" id = HTML5_and_Current_Standards_Nav href= "#HTML_5_and_Current_Standards">HTML 5 and Current Standards</a>
+    <a class = "nav-link" id = Accessible_HTML_5_Nav href = "#Accessible_HTML_5">Accessible HTML 5</a>
+    <a class = "nav-link" id = Things_to_Avoid_Nav href = "#Things_to_avoid">Things to avoid</a>
+    <a class = "nav-link" id = References_Used_Nav href = "#References_Used">References Used</a>
+  </nav>
+  
+  <main id="main-doc">
+    <section class = "main-section" id = "What_is_HTML?">
+      <header> What is HTML?</header>
+      <p>HTML stands for Hyper Text Markup Language. HTML is the standard for documents thats sole purpose is to be viewed in a web browser.</p>
+      <p>HTML code is used as the structure of webpages and is described as a webpages skeleton. HTML is often combined with CSS (Cascading Style Sheets) and JavaScript to make aesthetic and dynamic webpages.</p>
+    </section>
+    
+    <section class = "main-section" id = "What_you_should_already_know">
+      <header>What you should already know</header>
+      <p>Many people use HTML as a starting point in their coding journey. Before exploring HTML you should be aware of the mindset needed for coding and the persistence needed.</p>
+      <p>There is no requisite for learning HTML. However there are a few things you should be aware of.</p>
+      <ul>
+      <li>HTML is only the beginning of understanding Web Development, it is also necessary to understand CSS and basic JavaScript at the very least. </li>
+      <li>You may also want to look into server hosting, web security, web accessibility or even other languages that are used on the web such as PHP.</li>
+      <li>Before beginning you should know what HTML means as well as HTMLs role in making web pages.</li>
+      </ul>
+    </section>
+    
+     <section class = "main-section" id = "Basic_Use">
+      <header>Basic Use</header>
+       <p>HTML is a language that uses tags. Tags surround your variables of information. Below is a p tag (Paragraph) with some text in the middle. Most HTML tag types use both opening and closing tags.</p>
+       
+       <pre>
+       <code>&lt;p&gt; Hello World! &lt;/p&gt;</code>
+       </pre>
+       
+       <p>HTML is also a nested language. This means you can layer tags inside of each other below is an example of this. Note how the indents line up with each other to show a nested objects.</p>
+       
+     <pre>  
+     <code> &lt;div&gt; Layer One
+            &lt;div&gt; Layer Two &lt;/div&gt;
+      &lt;/div&gt;
+    </code>
+    </pre>
+       
+       <p>HTML is very beginner friendly as a lot of HTML code is repeated and remains consistent between projects.</p>
+       <p>Below is a standard start of a HTML file.</p>
+       
+       <pre>
+       <code>
+         &lt;!DOCTYPE html&gt;
+         &lt;html lang = "en"&gt;
+         
+          &lt;head&gt;
+           &lt;meta charset="UTF-8"&gt;
+           &lt;title&gt;Web Page title&lt;/title&gt;
+           &lt;link&gt; rel="stylesheet" href="default.css"&lt;/link&gt;
+          &lt;/head&gt;
+          
+          &lt;body&gt;
+            &lt;main&gt;
+              &lt;h1&gt;This is the page heading&lt;/h1&gt;
+              &lt;p&gt;This is text to display&lt;/p&gt;
+              &lt;img src = image.jpg alt = "image tag demonstration"&gt;
+            &lt;/main&gt;
+          &lt;/body&gt;
+         &lt;/html&gt;
+         
+       </code>
+       </pre>
+       <p>There are three main sections of a HTML file.</p>
+         <ul>
+           <li>start/top</li>
+           <li>the head</li> 
+           <li>and the body</li>
+         </ul>
+         <p>The start of the file consists of the Document Type and the language for the site.</p>
+         <pre>
+         <code>
+           &lt;!DOCTYPE html&gt;
+           &lt;html lang = "en"&gt;
+         </code>
+         </pre>
+         <p>The head of the html file contains all of the HTML's file information that does not get displayed on the main page, such as the website title and links to other files needed to display the webpage. Other files you often see are are CSS files and JavaScript files. In the example below shown is the meta charset, title, and a css sheet link.</p>
+       <pre>
+       <code>
+          &lt;head&gt;
+           &lt;meta charset="UTF-8"&gt;
+           &lt;title&gt;Web Page title&lt;/title&gt;
+           &lt;link&gt; rel="stylesheet" href="default.css"&lt;/link&gt;
+          &lt;/head&gt;
+       </code>
+       </pre>
+       
+       <p>The body of the html file contains all of the information that is to be displayed on the page, you can apply styling to HTML code however this is considered poor practice and is the role of a CSS file. When ran the body of the text should be displayed withn your browser as a skeleton.</p>
+       <p>Below is an example of a HTML files body code. The example includes a heading, body text (within a paragraph tag), an image and the closing html tag to mark the end of the file.</p>
+       <pre>
+       <code>
+         &lt;body&gt;
+            &lt;main&gt;
+              &lt;h1&gt;This is the page heading&lt;/h1&gt;
+              &lt;p&gt;This is text to display&lt;/p&gt;
+              &lt;img src = image.jpg alt = "image tag demonstration"&gt;
+            &lt;/main&gt;
+          &lt;/body&gt;
+         &lt;/html&gt;
+       </code>
+       </pre>
+    </section>
+    
+    <section class = "main-section" id = "HTML_5_and_Current_Standards">
+      <header>HTML 5 and Current Standards</header>
+      
+      <p>HTML5 was the last update to HTML and was published in 2014. The update increased HTMLS scope to suit the needs of multiple browsers and multiple devices of differing screen sizes. The update also had new features to make the websites more acessible. Most would agree that the update also allowed the expansion of websites to allow them to be more dynamic and eye catching.</p>
+      <p>The main big changes you should know are the following.</p>
+      <ul>
+        <li>Local storage on users devices, this is more secure than cookies and has larger storage capabilites.</li>
+        <li>Improved fonts with better fonts, colours and shadows as well as other font effects.</li>
+        <li>Objects can now interact with the users cursor.</li>
+        <li>Improved and better accessible tags such as article, sections and footer tags.</li>
+        <li>Added tags for media such as the video tag and audio tag.</li>
+        <li>Doctype declaration was shortened.</li>
+        <li>Browser based games, audio and video no longer need installed plugins in order to work.</li>
+        <li>3D effects can now be rendered in browsers using WebGl.</li>
+      </ul>
+    </section>
+    
+    <section class = "main-section" id = "Accessible_HTML_5">
+      <header>Accessible HTML 5</header>
+      <p>One of the big motivators for updating HTML 4 was to help make the web accessilbe to everyone.</p>
+      <p>HTML5 includes specific tags for web designers. These tags help improve web accessiblity as they provide a consistent layout that screen readers can read. Below is an example of the accessible tags.</p>
+      <pre>
+      <code>
+          &lt;nav&gt; Used to mark the navigation area of a site, most commonly a nav bar.&lt;/nav&gt;
+          
+          &lt;main&gt; Used to mark the main area of the website, there should only be one.&lt;/main&gt;
+          
+          &lt;h1&gt; Used to mark Headings, these go 1-6 and display in different sizes. 
+          However all styling should still be applied with CSS so headings should be numbered 
+          for heading order rather than size preference.&lt;h1&gt;
+          
+          &lt;section&gt; Sections represent information that needs to be group together, you can have many sections.&lt;section&gt;
+          
+          &lt;article&gt; Articles represent stand alone text that is different from the main and the sections. 
+          It is content that is unrelated to the others.&lt;/article&gt;
+          
+          &lt;aside&gt; Often sidebars, these are additional content containers that are often on the side of web pages.&lt;/aside&gt;
+          
+          &lt;footer&gt; Footers are used for the end of pages, they often contain 
+          disclaimer information and copyright information. &lt;/footer&gt;
+          
+          &lt;div&gt; Divs can be used for any other sections you need to make.
+          However you should avoid them where possible as they are not best practice.
+          They should only be used in situations where the above sections cannot.
+          Screen readers cannot interpret a div tags content.&lt;/div&gt;
+      </code>
+      </pre>
+      
+      <p>Improved fonts and design capabilities allow better designed dynamic websites, this is especially good for dyslexic users of the web.</p>
+      <p>The use of alternate text and transcripts can be used on images, video and audio. These not only provide accessibility for those with disabilities but for those on older machines as the alt text displays if the media fails to load.</p>
+    </section>
+    
+    <section class = "main-section" id = "Things_to_avoid">
+      <header>Things to avoid</header>
+      <p>Most web languages have depreciated features. Unlike other languages these are not always removed. The reason for this is to keep older websites functioning. Older websites may rely on these depreciated features to function so if they were removed the websites would no longer display correctly.</p>
+      <p>Within you HTML file avoid any style tags such as line breaks (br) or font tags, this is not the roll of a HTML file and can cause complications and contraindications when you come to add your CSS to the file. All the website styling should be added using CSS.</p>
+      <p>Always make sure to nest your HTML file correctly. This improves the codes readability and makes it easier to understand. Below is two examples of code. The first is correctly nested code the second is incorrectly nested code. Nested code does not affect code when it is written correctly. This is because in most case blank spaces are ignored when the code is interpretted.</p>
+      <pre>
+      <code>
+        &lt;div&gt; Div 1 
+            &lt;div&gt; Div 2 &lt;/div&gt;
+        &lt;/div&gt;
+      </code>
+      </pre>
+      <pre>
+      <code>
+        &lt;div&gt; Div 1 
+        &lt;div&gt; Div 2 
+        &lt;/div&gt;
+        &lt;/div&gt;
+      </code>
+      </pre>
+      
+      <p>Try to use accessible tags wherever possible. This makes yout site more accessible and consistent. Consistency is key for screen readers as they will not recognise standard divs and will read them all the same and not in the correct order for your site. This will confuse users.</p>
+    </section>
+    
+    <section class = "main-section" id = "References_Used">
+      <header>References Used</header>
+      <p>W3C HTML5 Reference - https://dev.w3.org/html5/html-author/</p>
+      <p>HTML vs HTML5 - What Is the Difference? By Cody Arsenault - https://www.keycdn.com/blog/html-vs-html5</p>
+      <p>Semantic HTML for Better Accessibility
+Kristy Parker - https://medium.com/swlh/semantic-html-for-better-accessibility-a54d0742033f</p>
+    </section>
+  </main>
+</body>
